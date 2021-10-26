@@ -550,24 +550,22 @@
     </div>
     <div class="main-container">
         <div class="slideshow-container">
-            <form method="post" action="project_components.html" id="myform">
 
-                <div class="mySlides fade" id="'.$x.'">
-                    <div class="quiz-container" id="quiz">
-                        <div class="quiz-header">
-                            <div class="numbertext">1.</div>
-                            <h2>Question</h2>
-                            <ul>
-                                <li><input type="radio" name="answer'.$x.'" id="a" class="answer" value="a_'.$x.'"><label for="a" id="a_text">Option A</label></li>
-                                <li><input type="radio" name="answer'.$x.'" id="b" class="answer" value="b_'.$x.'"><label for="b" id="b_text">Option B</label></li>
-                                <li><input type="radio" name="answer'.$x.'" id="c" class="answer" value="c_'.$x.'"><label for="c" id="c_text">Option C</label></li>
-                                <li><input type="radio" name="answer'.$x.'" id="d" class="answer" value="d_'.$x.'"><label for="d" id="d_text">Option D</label></li>
-                            </ul>
-                        </div>
+            <div class="mySlides fade" id="'.$x.'">
+                <div class="quiz-container" id="quiz">
+                    <div class="quiz-header">
+                        <div class="numbertext">1.</div>
+                        <h2>Question</h2>
+                        <ul>
+                            <li><input type="radio" name="answer'.$x.'" id="a" class="answer" value="a_'.$x.'"><label for="a" id="a_text">Option A</label></li>
+                            <li><input type="radio" name="answer'.$x.'" id="b" class="answer" value="b_'.$x.'"><label for="b" id="b_text">Option B</label></li>
+                            <li><input type="radio" name="answer'.$x.'" id="c" class="answer" value="c_'.$x.'"><label for="c" id="c_text">Option C</label></li>
+                            <li><input type="radio" name="answer'.$x.'" id="d" class="answer" value="d_'.$x.'"><label for="d" id="d_text">Option D</label></li>
+                        </ul>
                     </div>
                 </div>
-                <a href="project_components.html"><button id="s">Submit</button></a>
-            </form>
+            </div>
+            <a href="project_components.html"><button id="s">Submit</button></a>
             <br>
             <br>
             <br>
@@ -782,11 +780,6 @@
                     //const circleDasharray = `${(calculateTimeFraction() * FULL_DASH_ARRAY).toFixed(0)} 360`;
                     const circleDasharray = ((TIME_LIMIT - timeLeft) / TIME_LIMIT * 283).toString();;
                     document.getElementById("base-timer-path-remaining").setAttribute("stroke-dashoffset", circleDasharray);
-                }
-            </script>
-            <script type="text/javascript">
-                function forcesubmit() {
-                    document.getElementById("myform").submit();
                 }
             </script>
 </body>
